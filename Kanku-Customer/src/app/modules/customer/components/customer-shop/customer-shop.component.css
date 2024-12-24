@@ -1,0 +1,55 @@
+/* Basic styling for dropdown */
+.list-group-item {
+    position: relative;
+}
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Opens to the right */
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 200px; /* Adjust width as needed */
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the nav link */
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Show the dropdown menu when hovering over the parent */
+.list-group-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown arrow styling */
+.dropdown-toggle {
+    font-size: 0.75em;
+    margin-left: 10px;
+}
+#chateSchoolSubMenu {
+    display: none;
+}
+
+.dropdown-submenu:hover #chateSchoolSubMenu {
+    display: block;
+}
